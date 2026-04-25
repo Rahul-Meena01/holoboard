@@ -1,0 +1,77 @@
+export const THEMES = {
+  light: {
+    name: "light",
+    canvas: "#f7f4ec",
+    gridDot: "rgba(123, 110, 88, 0.30)",
+    appBg: "#e9e6df",
+    panel: "#ffffff",
+    panelBorder: "#d9d4ca",
+    panelMuted: "#f5f2ea",
+    text: "#201f1d",
+    mutedText: "#6f6b63",
+    accent: "#1565ff",
+    accentMuted: "rgba(21, 101, 255, 0.14)",
+    success: "#15803d",
+    danger: "#dc2626",
+    stickyPalette: [
+      "#fde68a",
+      "#bfdbfe",
+      "#fecdd3",
+      "#bbf7d0",
+      "#ddd6fe",
+      "#fef08a",
+    ],
+    inkPalette: [
+      "#151515",
+      "#dc2626",
+      "#1565ff",
+      "#15803d",
+      "#d97706",
+      "#7c3aed",
+      "#0891b2",
+      "#ea580c",
+    ],
+  },
+  dark: {
+    name: "dark",
+    canvas: "#1a1b21",
+    gridDot: "rgba(173, 179, 194, 0.24)",
+    appBg: "#101117",
+    panel: "#191b24",
+    panelBorder: "#2a2e3a",
+    panelMuted: "#151821",
+    text: "#eceff5",
+    mutedText: "#97a0b4",
+    accent: "#6ba2ff",
+    accentMuted: "rgba(107, 162, 255, 0.18)",
+    success: "#22c55e",
+    danger: "#ef4444",
+    stickyPalette: [
+      "#fef08a",
+      "#bfdbfe",
+      "#fecdd3",
+      "#bbf7d0",
+      "#ddd6fe",
+      "#fef3c7",
+    ],
+    inkPalette: [
+      "#f8fafc",
+      "#f87171",
+      "#60a5fa",
+      "#4ade80",
+      "#fbbf24",
+      "#c084fc",
+      "#22d3ee",
+      "#fb923c",
+    ],
+  },
+};
+
+export const FONT_STACK =
+  "'Plus Jakarta Sans', 'Manrope', 'Segoe UI', sans-serif";
+
+export const SHADOWS = {
+  lg: "0 20px 45px rgba(4, 8, 20, 0.24)",
+  md: "0 12px 24px rgba(4, 8, 20, 0.2)",
+  sm: "0 5px 12px rgba(4, 8, 20, 0.15)",
+};

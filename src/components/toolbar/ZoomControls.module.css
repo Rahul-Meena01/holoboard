@@ -1,0 +1,38 @@
+.controls {
+  position: absolute;
+  right: 14px;
+  bottom: 20px;
+  z-index: 25;
+  border: 1px solid var(--panel-border);
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.controlBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  border: 1px solid var(--panel-border);
+  background: var(--panel-muted);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.zoomValue {
+  min-width: 40px;
+  text-align: center;
+  color: var(--muted-text);
+  font-size: 11px;
+  font-family: 'JetBrains Mono', 'Cascadia Code', monospace;
+}
+
+.resetBtn {
+  width: auto;
+  padding: 0 8px;
+}

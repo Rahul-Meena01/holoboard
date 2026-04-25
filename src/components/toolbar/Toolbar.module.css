@@ -1,0 +1,136 @@
+.toolbar {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 30;
+  border-radius: 14px;
+  border: 1px solid var(--panel-border);
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  backdrop-filter: blur(9px);
+  padding: 8px;
+  box-shadow: var(--shadow-lg);
+}
+
+.groupItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.separator {
+  height: 1px;
+  margin: 3px 4px;
+  background: var(--panel-border);
+}
+
+.toolButton {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted-text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 120ms ease;
+}
+
+.toolButton:hover {
+  background: var(--panel-muted);
+  color: var(--text);
+}
+
+.toolButtonActive {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+.optionsBar {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  z-index: 25;
+  border-radius: 100px;
+  border: 1px solid var(--panel-border);
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-md);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.colorRow,
+.sizeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.optionLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--muted-text);
+}
+
+.swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 120ms ease;
+}
+
+.swatchActive {
+  transform: scale(1.14);
+  border-color: var(--accent);
+}
+
+.sizeBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--panel-border);
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sizeBtnActive {
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+.sizeDot {
+  border-radius: 999px;
+  background: var(--muted-text);
+}
+
+.sizeBtnActive .sizeDot {
+  background: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .toolbar {
+    left: 10px;
+  }
+
+  .optionsBar {
+    width: calc(100vw - 20px);
+    justify-content: space-between;
+  }
+}
